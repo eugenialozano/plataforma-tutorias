@@ -1,0 +1,196 @@
+PLAN DE ACCIÓN TUTORIAL
+
+AGOSTO – DICIEMBRE 2024
+
++---------+-------------------+---------------------------------------+
+| FECHA   | ACTIVIDAD         | DESCRIPCIÓN                           |
++:=======:+:==================+:======================================+
+|         | Bienvenida        | Bienvenida                            |
+|         |                   |                                       |
+|         |                   | Presentación del tutor.               |
+|         |                   |                                       |
+|         |                   | Presenta el Programa de Acción        |
+|         |                   | Tutorial (PAT)                        |
+|         |                   |                                       |
+|         |                   | Da a conocer los objetivos y          |
+|         |                   | beneficios del PAT                    |
+|         |                   |                                       |
+|         |                   | Comunica sobre las sesiones           |
+|         |                   | individuales y grupales de tutorías   |
+|         |                   |                                       |
+|         |                   | Da a conocer los compromisos y        |
+|         |                   | responsabilidades del tutor y         |
+|         |                   | tutorados                             |
+|         |                   |                                       |
+|         |                   | Registra asistencia                   |
+|         |                   |                                       |
+|         |                   | Entrega: Cuaderno del tutorado        |
++---------+-------------------+---------------------------------------+
+|         | Anexo No. 6       | Aplica anexo No. 6 Ficha de           |
+|         |                   | Identificación del tutorado.          |
+|         |                   |                                       |
+|         |                   | (Crea una base de datos del grupo     |
+|         |                   | tutorado, nombre completo, teléfono y |
+|         |                   | correo electrónico.)                  |
++---------+-------------------+---------------------------------------+
+|         | Inducción         | Presenta el objetivo, misión y visión |
+|         |                   | del Instituto Tecnológico.            |
+|         | Anexo No. 6       |                                       |
+|         | Identificación    | Entregar el Lineamiento para la       |
+|         | del tutorado.     | Evaluación y Acreditación de          |
+|         |                   | Asignaturas, vigente.                 |
+|         |                   |                                       |
+|         |                   | Aplica el Anexo 6. Ficha de           |
+|         |                   | identificación del tutorado.          |
++---------+-------------------+---------------------------------------+
+|         | Anexo No. 8       | Aplica el anexo No. 8 Formato de      |
+|         | Formato de        | entrevista; área social, área         |
+|         | entrevista        | psicopedagógica, área de integración, |
+|         |                   | características personales, plan de   |
+|         | Anexo No 15       | vida y carrera.                       |
+|         | Registro para     |                                       |
+|         | rendimiento       | Entrega Anexo No 15 Registro para     |
+|         | académico.        | rendimiento académico, permite llevar |
+|         |                   | un control de las calificaciones del  |
+|         |                   | tutorado y visualizar el desempeño    |
+|         |                   | durante el transcurso del periodo     |
+|         |                   | escolar, detectar “focos” de alerta   |
+|         |                   | en caso de que se tengan más de un    |
+|         |                   | tema reprobado en las asignaturas que |
+|         |                   | cursa, realizar con el tutorado, una  |
+|         |                   | revisión en sus procesos de estudio e |
+|         |                   | invitar a introducir cambios para     |
+|         |                   | obtener los resultados deseados.      |
+|         |                   |                                       |
+|         |                   | Analiza de manera general;            |
+|         |                   | Lineamiento para la Evaluación y      |
+|         |                   | Acreditación de Asignaturas, vigente. |
++---------+-------------------+---------------------------------------+
+|         | Análisis de la    | Crea una base de datos de los         |
+|         | información       | tutorados, con las características    |
+|         | (sesión de        | relevantes con base en el anexo 6 y   |
+|         | trabajo del       | 8, analiza la información y detecta   |
+|         | tutor)            | fortalezas del tutorado y áreas que   |
+|         |                   | requieren atención.                   |
++---------+-------------------+---------------------------------------+
+|         | Tutoría           | Ofrece tutoría individual a los       |
+|         | individual        | alumnos que se detectan con algún     |
+|         |                   | tipo de problema.                     |
+|         |                   |                                       |
+|         |                   | Se canaliza para su atención al       |
+|         |                   | Departamento de Desarrollo Académico. |
+|         |                   |                                       |
+|         |                   | Solicita y revisa el Anexo No. 15     |
+|         |                   | Registro para el rendimiento          |
+|         |                   | académico.                            |
++---------+-------------------+---------------------------------------+
+|         | Anexo No. 9       | Aplica el Anexo 9. Línea de la vida   |
+|         |                   | del tutorado                          |
+|         |                   |                                       |
+|         |                   | Revisa el anexo No. 15 Registro para  |
+|         |                   | el rendimiento académico.             |
++---------+-------------------+---------------------------------------+
+|         | Análisis de la    | Sesión en grupo para análisis y       |
+|         | línea de la vida, | reflexión del anexo No. 9 de la línea |
+|         | actividad en      | de la vida personal de tutorados,     |
+|         | grupo.            | (actividad voluntaria).               |
++---------+-------------------+---------------------------------------+
+|         | Anexo No. 10      | Aplica el Anexo 10 Análisis (FODA).   |
+|         |                   | Permite                               |
+|         |                   |                                       |
+|         |                   | conocer la situación real y actual    |
+|         |                   | del tutorado.                         |
++---------+-------------------+---------------------------------------+
+|         | Análisis grupal   | En tutoría grupal, exponer el         |
+|         | del anexo No. 10  | tutorado, de forma voluntaria, el     |
+|         |                   | análisis FODA, fortalezas             |
+|         |                   | debilidades, amenazas y               |
+|         |                   | oportunidades, para conocer la        |
+|         |                   | situación real y actual en que se     |
+|         |                   | encuentra el tutorado y aplicar sus   |
+|         |                   | estrategias de mejora a futuro.       |
++---------+-------------------+---------------------------------------+
+|         | Análisis de la    | Adjunta a la base de datos de cada    |
+|         | información       | tutorado los anexos 9, 10 y 15 para   |
+|         | (Tutor)           | seguimiento.                          |
+|         |                   |                                       |
+|         |                   | Obtiene conclusiones y da seguimiento |
+|         |                   | (canaliza)                            |
++---------+-------------------+---------------------------------------+
+|         | Entrevista        | Con base en la información de los     |
+|         | individual        | anexos 9, 10 y 15, ofrecer tutoría    |
+|         |                   | individual a los tutorados y de       |
+|         |                   | encontrar necesidades de atención,    |
+|         |                   | canaliza al área de apoyo interna o   |
+|         |                   | externa que considere el tutor.       |
++---------+-------------------+---------------------------------------+
+|         | Anexo No. 11      | Aplica Anexo 11 encuesta sobre        |
+|         | encuesta sobre    | habilidades de estudio                |
+|         | habilidades de    |                                       |
+|         | estudio           | Organización del estudio Técnicas de  |
+|         |                   | estudio                               |
+|         |                   |                                       |
+|         |                   | Motivación para el estudio.           |
+|         |                   |                                       |
+|         |                   | Realiza análisis grupal de las        |
+|         |                   | habilidades de los tutorados para el  |
+|         |                   | estudio.                              |
++---------+-------------------+---------------------------------------+
+|         | Tutoría grupal    | Análisis grupal sobre el anexo No. 11 |
+|         |                   | encuesta sobre habilidades de estudio |
+|         |                   |                                       |
+|         |                   | Recibe el anexo No. 15 seguimiento    |
+|         |                   | para el registro académico.           |
++---------+-------------------+---------------------------------------+
+|         | Reunión con       | Conclusiones a cerca del apoyo        |
+|         | tutorados para    | recibido en las tutorías (reunión     |
+|         | conclusiones      | para mejora del proceso de tutoría y  |
+|         | sobre la tutoría  | mejora continua del proceso de        |
+|         |                   | aprendizaje del tutorado).            |
+|         | Actividad del     |                                       |
+|         | tutor             | El tutor elabora acta final de        |
+|         |                   | asistencia de los tutorados a las     |
+|         |                   | sesiones.                             |
+|         |                   |                                       |
+|         |                   | Elabora rúbrica de evaluación por     |
+|         |                   | estudiante                            |
+|         |                   |                                       |
+|         |                   | nombre del tutorado, y nivel de       |
+|         |                   | desempeño insuficiente, suficiente    |
+|         |                   | bueno notable y excelente (según      |
+|         |                   | formato). Responsable de la           |
+|         |                   | realizarlo: Tutor                     |
+|         |                   |                                       |
+|         |                   | Contesta anexo No. 19 Reporte         |
+|         |                   | semestral del tutor, debe registrar   |
+|         |                   | nombre de cada tutorado, tipo de      |
+|         |                   | tutoría ofrecida y área donde se      |
+|         |                   | canalizo durante la tutoría.          |
+|         |                   | Responsable de la realizarlo: Tutor   |
+|         |                   |                                       |
+|         |                   | Anexo 15 Formato de registro para el  |
+|         |                   | desempeño académico, cual indica que  |
+|         |                   | el tutorado debe realizar.            |
++---------+-------------------+---------------------------------------+
+|         |                   | Entrega al Departamento y Desarrollo  |
+|         |                   | académicos *Acta de tutorados que     |
+|         |                   | cumplieron con la tutoría, especifica |
+|         |                   | quienes no cumplieron para la entrega |
+|         |                   | de constancia de cumplimiento en el   |
+|         |                   | Programa Institucional de Tutoría.    |
+|         |                   |                                       |
+|         |                   | *Elabora rúbrica de evaluación por    |
+|         |                   | estudiantes.                          |
+|         |                   |                                       |
+|         |                   | *Anexo 19 reporte semestral del       |
+|         |                   | tutor, (Tutoría en grupo, individual  |
+|         |                   | o ambas, estudiantes canalizados      |
+|         |                   | durante el periodo escolar y área     |
+|         |                   | donde se canalizo.                    |
++---------+-------------------+---------------------------------------+
+|         |                   |                                       |
++---------+-------------------+---------------------------------------+
+
+Datos de contacto:
+
+Nombre y firma del tutor

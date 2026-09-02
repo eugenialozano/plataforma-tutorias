@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Plataforma de Tutorías (SNIT/TecNM)
 
-## Getting Started
+Digitaliza el Programa Institucional de Tutorías: ficha de identificación, entrevista y demás
+anexos, citas con psicología/medicina, detección temprana de riesgo y reportes. Ver el plan
+completo del proyecto en `docs/` (por fases) y los anexos originales de referencia en
+`docs/anexos-referencia/`.
 
-First, run the development server:
+Estado actual: **Fase 0** — autenticación por rol, alta de planteles/grupos/usuarios y
+digitalización del Anexo 6 (ficha de identificación).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Next.js (App Router) + Supabase (Postgres, Auth, Storage). Ver el plan en
+`C:\Users\kenyj\.claude\plans\lively-juggling-rivest.md` para el roadmap completo por fases.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Puesta en marcha (primera vez)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Crear un proyecto en [supabase.com](https://supabase.com)** (capa gratuita alcanza para
+   empezar).
+2. **Aplicar el esquema de base de datos**: en el Dashboard de Supabase, abre el SQL Editor y
+   pega el contenido de `supabase/migrations/0001_fase0_schema.sql`, luego ejecútalo.
+3. **Variables de entorno**: copia `.env.local.example` a `.env.local` y llena
+   `NEXT_PUBLIC_SUPABASE_URL` y `NEXT_PUBLIC_SUPABASE_ANON_KEY` (Project Settings → API en
+   Supabase).
+4. **Instalar dependencias**: `npm install`.
+5. **Crear tu primer usuario admin**:
+   - Corre la app (`npm run dev`) y regístrate normalmente desde `/login` con tu correo.
+   - Todo usuario nuevo se crea con rol `tutorado` por defecto. Para volverte `admin` la primera
+     vez, ve al SQL Editor de Supabase y ejecuta:
+     ```sql
+     update public.perfil set rol = 'admin' where email = 'tu-correo@ejemplo.com';
+     ```
+   - Con esa cuenta ya puedes entrar a **Usuarios** dentro de la app y asignar rol/plantel al
+     resto del personal (tutores, psicología, medicina, coordinación) sin volver a tocar SQL.
+6. **Correr en desarrollo**: `npm run dev` y abre [http://localhost:3000](http://localhost:3000).
 
-## Learn More
+## Estructura relevante
 
-To learn more about Next.js, take a look at the following resources:
+- `src/app/login` — inicio de sesión y registro (Supabase Auth).
+- `src/app/dashboard` — landing por rol.
+- `src/app/admin/*` — administración de planteles, grupos y usuarios (rol `admin`/`coordinador`).
+- `src/app/tutor` — vista del tutor: sus grupos y el avance de sus tutorados.
+- `src/app/anexo6` — ficha de identificación del tutorado (Anexo 6).
+- `src/proxy.ts` — protección de rutas por sesión (antes `middleware.ts`; renombrado porque
+  Next.js 16 deprecó `middleware` en favor de `proxy`).
+- `supabase/migrations/` — esquema SQL y políticas de seguridad a nivel de fila (RLS).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Notas de seguridad
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- El acceso a datos está controlado con **Row Level Security** en Postgres, no solo en la
+  interfaz: cada tabla define quién puede leer/escribir cada fila según su rol y plantel.
+  Cuando se agreguen instrumentos clínicos (Fase 2), el detalle de esas respuestas debe quedar
+  restringido a psicología/medicina y al propio tutorado — nunca visible para tutor/coordinación
+  más allá de la alerta y el estatus de canalización.
+- `SUPABASE_SERVICE_ROLE_KEY` (en `.env.local.example`) nunca debe usarse desde el navegador ni
+  comitearse; solo para scripts de administración que corran en el servidor.
 
-## Deploy on Vercel
+## Próximos pasos (Fase 1)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Ver el plan completo para el detalle, en resumen: Anexo 8 (entrevista), Anexo 9 (línea de la
+vida), Anexo 10 (FODA), Anexo 11 (encuesta de habilidades de estudio, con calificación
+automática), Anexo 15 (registro de desempeño académico) y el módulo de citas con
+psicología/medicina.
