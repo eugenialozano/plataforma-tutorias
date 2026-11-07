@@ -32,6 +32,7 @@ const ENLACES_POR_ROL: Record<Perfil["rol"], { href: string; label: string }[]> 
     { href: "/dashboard", label: "Inicio" },
     { href: "/admin/planteles", label: "Planteles" },
     { href: "/admin/grupos", label: "Grupos" },
+    { href: "/admin/asignar-tutorados", label: "Asignar tutorados" },
     { href: "/admin/usuarios", label: "Usuarios" },
   ],
 };
