@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { redirect } from "next/navigation";
 import { obtenerUsuarioYPerfil } from "@/lib/auth/perfil-actual";
 import { createClient } from "@/lib/supabase/server";
@@ -57,7 +58,11 @@ export default async function PaginaAsignarTutorados() {
         <tbody>
           {(tutorados ?? []).map((t) => (
             <tr key={t.id} className="border-b border-zinc-100 dark:border-zinc-900">
-              <td className="py-2">{t.nombre_completo}</td>
+              <td className="py-2">
+                <Link href={`/tutor/${t.id}`} className="underline underline-offset-2">
+                  {t.nombre_completo}
+                </Link>
+              </td>
               <td className="py-2 text-zinc-500">{t.email}</td>
               <td className="py-2">
                 <AsignarForm

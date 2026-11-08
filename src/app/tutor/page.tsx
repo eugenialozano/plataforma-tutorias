@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { redirect } from "next/navigation";
 import { obtenerUsuarioYPerfil } from "@/lib/auth/perfil-actual";
 import { createClient } from "@/lib/supabase/server";
@@ -76,9 +77,11 @@ export default async function PaginaTutor() {
                   return (
                     <tr key={tutorado.id} className="border-b border-zinc-100 dark:border-zinc-900">
                       <td className="py-2">
-                        {tutorado.apellido_paterno
-                          ? `${tutorado.apellido_paterno} ${tutorado.apellido_materno ?? ""} ${tutorado.nombres ?? ""}`
-                          : p?.nombre_completo ?? "—"}
+                        <Link href={`/tutor/${tutorado.id}`} className="underline underline-offset-2">
+                          {tutorado.apellido_paterno
+                            ? `${tutorado.apellido_paterno} ${tutorado.apellido_materno ?? ""} ${tutorado.nombres ?? ""}`
+                            : p?.nombre_completo ?? "—"}
+                        </Link>
                       </td>
                       <td className="py-2 text-zinc-500">{p?.email ?? "—"}</td>
                       <td className="py-2">

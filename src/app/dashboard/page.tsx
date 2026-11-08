@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { redirect } from "next/navigation";
 import { obtenerUsuarioYPerfil } from "@/lib/auth/perfil-actual";
 import { AppShell } from "@/components/app-shell";
@@ -39,9 +40,9 @@ export default async function PaginaDashboard() {
       {perfil.rol === "tutor" && (
         <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
           Desde{" "}
-          <a href="/tutor" className="underline underline-offset-2">
+          <Link href="/tutor" className="underline underline-offset-2">
             Mi grupo
-          </a>{" "}
+          </Link>{" "}
           puedes ver a tus tutorados y su avance.
         </p>
       )}
