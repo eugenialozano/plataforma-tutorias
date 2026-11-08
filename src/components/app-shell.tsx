@@ -19,6 +19,7 @@ const ENLACES_POR_ROL: Record<Perfil["rol"], { href: string; label: string }[]> 
   tutor: [
     { href: "/dashboard", label: "Inicio" },
     { href: "/tutor", label: "Mi grupo" },
+    { href: "/estadisticas", label: "Estadísticas" },
   ],
   psicologo: [{ href: "/dashboard", label: "Inicio" }],
   medico: [{ href: "/dashboard", label: "Inicio" }],
@@ -27,6 +28,7 @@ const ENLACES_POR_ROL: Record<Perfil["rol"], { href: string; label: string }[]> 
     { href: "/admin/planteles", label: "Planteles" },
     { href: "/admin/grupos", label: "Grupos" },
     { href: "/admin/usuarios", label: "Usuarios" },
+    { href: "/estadisticas", label: "Estadísticas" },
   ],
   admin: [
     { href: "/dashboard", label: "Inicio" },
@@ -34,6 +36,7 @@ const ENLACES_POR_ROL: Record<Perfil["rol"], { href: string; label: string }[]> 
     { href: "/admin/grupos", label: "Grupos" },
     { href: "/admin/asignar-tutorados", label: "Asignar tutorados" },
     { href: "/admin/usuarios", label: "Usuarios" },
+    { href: "/estadisticas", label: "Estadísticas" },
   ],
 };
 
