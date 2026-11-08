@@ -67,7 +67,7 @@ export function AppShell({
           </div>
           <div className="flex items-center gap-3 text-sm">
             <span className="text-zinc-500">
-              {perfil.nombre_completo} · {ETIQUETAS_ROL[perfil.rol]}
+              {perfil.nombre_completo} ({perfil.email}) · {ETIQUETAS_ROL[perfil.rol]}
             </span>
             <form action={cerrarSesion}>
               <button type="submit" className="text-zinc-500 underline underline-offset-2 hover:text-zinc-800 dark:hover:text-zinc-200">
