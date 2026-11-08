@@ -60,7 +60,7 @@ export default async function PaginaTutor() {
         return (
           <div key={grupo.id} className="mt-8">
             <h2 className="text-lg font-medium text-zinc-900 dark:text-zinc-50">
-              {grupo.carrera} · Semestre {grupo.semestre} · {grupo.ciclo_escolar}
+              {grupo.carrera}{grupo.nombre ? ` · ${grupo.nombre}` : ""} · Semestre {grupo.semestre} · {grupo.ciclo_escolar}
             </h2>
             <table className="mt-3 w-full text-left text-sm">
               <thead>
