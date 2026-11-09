@@ -1,10 +1,12 @@
 "use server";
 
+import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 
 export interface EstadoAuth {
   error?: string;
+  mensaje?: string;
 }
 
 export async function iniciarSesion(
@@ -52,6 +54,58 @@ export async function registrarse(
 
   if (error) {
     return { error: error.message };
+  }
+
+  redirect("/dashboard");
+}
+
+export async function recuperarContrasena(
+  _estadoPrevio: EstadoAuth,
+  formData: FormData,
+): Promise<EstadoAuth> {
+  const email = String(formData.get("email") ?? "").trim();
+  if (!email) {
+    return { error: "Ingresa tu correo." };
+  }
+
+  const cabeceras = await headers();
+  const host = cabeceras.get("x-forwarded-host") ?? cabeceras.get("host");
+  const protocolo = cabeceras.get("x-forwarded-proto") ?? "https";
+
+  const supabase = await createClient();
+  const { error } = await supabase.auth.resetPasswordForEmail(email, {
+    redirectTo: `${protocolo}://${host}/auth/confirm?next=/auth/nueva-contrasena`,
+  });
+
+  if (error) {
+    return { error: "No se pudo enviar el correo. Inténtalo de nuevo en unos minutos." };
+  }
+
+  // Mismo mensaje exista o no la cuenta, para no revelar qué correos están registrados.
+  return {
+    mensaje:
+      "Si el correo está registrado, te enviamos un enlace para crear una nueva contraseña. Revisa también la carpeta de spam.",
+  };
+}
+
+export async function cambiarContrasena(
+  _estadoPrevio: EstadoAuth,
+  formData: FormData,
+): Promise<EstadoAuth> {
+  const password = String(formData.get("password") ?? "");
+  const confirmar = String(formData.get("confirmar") ?? "");
+
+  if (password.length < 8) {
+    return { error: "La contraseña debe tener al menos 8 caracteres." };
+  }
+  if (password !== confirmar) {
+    return { error: "Las contraseñas no coinciden." };
+  }
+
+  const supabase = await createClient();
+  const { error } = await supabase.auth.updateUser({ password });
+  if (error) {
+    return { error: "No se pudo cambiar la contraseña. Solicita un enlace nuevo." };
   }
 
   redirect("/dashboard");
